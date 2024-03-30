@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+.homepage {
+  background-image: url(./images/lobby.jpeg);
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: change 60s infinite ease-in;
+  top: 0;
+}
+
+@keyframes change {
+  0% {
+   
+    background-image: url('./images/lobby.jpg');
+  }
+
+  20% {
+    background-image: url('./images/balcony.jpeg');
+  }
+
+  40% {
+    background-image: url('./images/dinning.jpeg');
+  }
+
+  60% {
+    background-image: url('./images/garden.jpeg');
+  }
+
+  80% {
+    background-image: url("./images/bedroom.jpeg");
+  }
+
+  100% {
+    background-image: url('./images/pool.jpeg');
+  }
+
+}
+
+/* Navbar */
+
+header img {
+  border-radius: 60px;
+}
+
+header {
+  height: 120px;
+  min-width: fit-content;
+  background-color: black;
+  opacity: 0.8;
+}
+
+header .upper_logo {
+  align-items: center;
+  margin: 1em 15em 0em 46em;
+  height: 90px;
+  width: 90px;
+}
+
+header .upper_logo:hover{
+  cursor: pointer;
+}
+
+header .lower_logo {
+  align-items: center;
+  margin: 3em 0 0 10em;
+
+}
+
+.navbar ul li{
+  display: inline-flex;
+  float: left;
+  padding: 25px;
+  margin-top: -50px;
+  justify-content: space-between;
+}
+.navbar ul li a {
+  display: flex; 
+  flex-direction: row; 
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  border-radius: 60px;
+  /* padding: 10px; */
+}
+
+.register{
+  color: white;
+}
+
+ul li a:hover {
+  color: blue;
+  background-color: gray;
+  padding: 10px;
+}
+
+ul li a:active {
+  color: red;
+}
+
+.navbar .register{
+  float: right;
+}
+
+
+
+/* navbar end */
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* Center Image */
+
+.container h2 {
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 2px;
+  line-height: 1.8;
+  padding-top: 200px;
+  padding-bottom: 10px;
+  color: rgb(254, 255, 255);
+  font-size: 50px;
+  font-style: italic;
+}
+
+button {
+  border: 2px solid black;
+  height: 50px;
+  width: 200px;
+  background-color: #f9d8c9;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 50em;
+  margin-top: 80px;
+  border-radius: 10px;
+}
+
+button:hover {
+  transform: scale(1.1);
+  color: red;
+  background-color: rgb(228, 228, 154);
+  border-radius: 25px;
+}
+
+
+/* booking section box */
+
+.header_container {
+  padding: 1rem 1rem 5rem 1rem;
+
+}
+
+.booking_container {
+  position: absolute;
+  bottom: -5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 6rem);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 2rem;
+  border-radius: 2rem;
+  background-color: aliceblue;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 5px 5px 30px darkblue;
+}
+
+.booking_container form {
+  width: 100%;
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+
+}
+
+.booking_container .input_group {
+  width: 100%;
+  position: relative;
+}
+
+.booking_container label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: red;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.booking_container input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  color: yellowgreen;
+}
+
+.booking_container input:focus~label {
+  font-size: .8rem;
+  top: 0;
+}
+
+.booking_container .form_group p {
+  margin-top: .5rem;
+  font-size: .8rem;
+  color: lightblue;
+}
+
+.booking_container .btn {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  background-color: red;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.booking_container .btn:hover {
+  background-color: darkred;
+}
+
+
+/* Client Section */
+
+.client {
+  background-color: lightcyan;
+}
+
+.section_header h2{
+  align-items: center;
+}
+.client_grid {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.client_card {
+  padding: 2rem;
+  background-color: wheat;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px rgba(0,0,0,.1);
+}
+
+.client_card img{
+  max-width: 80px;
+  margin: auto;
+  margin-bottom: 1rem;
+  border-radius: 100%;
+}
+
+.client_card p{
+  text-align: center;
+  color: darkblue;
+}
+
+/* About */
+
+section {
+  margin: 25px 10px 300px 10px;
+}
+
+#about h3 {
+  font-family: algerian;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.7;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: black;
+  font-size: 25px;
+}
+
+#about p {
+  font-family: sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+
+/* footer */
+
+.footer{
+  background: linear-gradient(rgb(46, 42, 42),rgb(89, 64, 31));
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  height: 300px;
+  align-items: center;
+  padding-top: 80px;
+  border-radius: 24px;
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:rgb(255, 255, 255);
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:white;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color:#fff;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }

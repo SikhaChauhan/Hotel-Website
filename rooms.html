@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="rooms.css">
+  <title>Rooms</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <nav class="navbar">
+    <div>
+      <img class="logo" src="./images/room logo.jpg" alt="" srcset="">
+    </div>
+    <div class="nav">
+      <a href="index.html">HOME</a>
+      <a href="index.html">ABOUT</a>
+      <a href="rooms.html">STAYS</a>
+      <a href="project.html" target="_main">MENU</a>
+      <a href="contact.html">CONTACT US</a>
+    </div>
+  </nav>
+
+  <!-- Center Image -->
+
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="./images/hd.jpg" style="width:100%">
+      <div class="text">Book Your Room</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="./images/img3.jpeg" style="width:100%">
+      <div class="text">Book Your Room</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="./images/hd4.jpg" style="width:100%">
+      <div class="text">Book Your Room</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(0)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+  </div>
+  <br>
+
+
+
+  <!--Room Booking Section-->
+
+
+  <section>
+    <h1>OUR ROOMS</h1>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img src="./images/hd1.jpg" width="500" height="400">
+        </a>
+        <div class="desc">$120.00 per night
+          <h1>Suite Room</h1>
+          <a href="#myform"><button>Book Now</button></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="./images/img1.jpg">
+          <img src="./images/img1.jpg" width="500" height="500">
+        </a>
+        <div class="desc">$100.00 per night
+          <h1>Classic Room</h1>
+          <a href="#myform"><button>Book Now</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="./images/img4.jpeg">
+          <img src="./images/img4.jpeg" width="500" height="400">
+        </a>
+        <div class="desc">$150.00 per night
+          <h1>Family Room</h1>
+          <a href="#myform"><button>Book Now</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="./images/img6.jpeg">
+          <img src="./images/img6.jpeg" width="600" height="400">
+        </a>
+        <div class="desc">$200.00 per night
+          <h1>Dulex Room</h1>
+          <a href="#myform"><button>Book Now</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="./images/img7.jpeg">
+          <img src="./images/img7.jpeg" width="600" height="400">
+        </a>
+        <div class="desc">$180.00 per night
+          <h1>Luxury Room</h1>
+          <a href="#myform"><button>Book Now</button></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="./images/img8.jpeg">
+          <img src="./images/img8.jpeg" width="600" height="400">
+        </a>
+        <div class="desc">$120.00 per night
+          <h1>Superior Room</h1>
+          <a href="#myform"><button>Book Now</button></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="./images/img9.jpeg">
+          <img src="./images/img9.jpeg" width="600" height="400">
+        </a>
+        <div class="desc">$120.00 per night
+          <h1>Single Room</h1>
+          <a href="#myform"><button>Book Now</button></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="./images/img10.jpeg">
+          <img src="./images/img10.jpeg" width="600" height="400">
+        </a>
+        <div class="desc">$120.00 per night
+          <h1>Suite Room</h1>
+          <a href="#myform"><button>Book Now</button></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form for Room Booking -->
+
+    <form id="myform" action="connect.php" method="post">
+      <h1>Book Your Room</h1>
+      <div class="row">
+        <div class="coloumn">
+          <div class="input-group">
+            <label for="customer_name">Customer Name</label>
+            <input type="text" id="customer_name" name="customer_name">
+          </div>
+          <div class="input-group">
+            <label for="phone_number">Phone</label>
+            <input type="number" id="phone_number" name="phone_number">
+          </div>
+          <div class="input-group">
+            <label for="Check In Date">Check In Date</label>
+            <input type="date" id="check_in_date" name="check_in_date">
+          </div>
+          <div class="input-group">
+            <label for="Check Out Date">Check Out Date</label>
+            <input type="date" id="check_out_date" name="check_out_date">
+          </div>
+          <div class="input-group">
+            <label for="room booking">Room</label>
+            <select id="Book_Room">
+              <option value="" selected="selected">Select one</option>
+              <option value="Suite room">Suite Room</option>
+              <option value="classic room">Classic Room</option>
+              <option value="Luxury room">Luxury Room</option>
+              <option value="Superior room">Superior Room</option>
+              <option value="single bed room">Single Bed Room</option>
+              <option value="family room">Family Room</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="Adult">Adults</label>
+            <select id="adult">
+              <option value="adult">1</option>
+              <option value="adult">2</option>
+              <option value="adult">3</option>
+
+              <option value="add">4</option>
+              <option value="adult">5</option>
+              <option value="adult">6</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="children">Children</label>
+            <select id=children">
+              <option value="children">0</option>
+              <option value="children">1</option>
+              <option value="children">2</option>
+              <option value="children">3</option>
+              <option value="children">4</option>
+              <option value="children">5</option>
+            </select>
+          </div>
+          <button>Submit</button>
+        </div>
+    </form>
+  </section>
+  <br>
+  <br><br><br><br>
+
+
+  <!-- Script code -->
+
+
+  <script>
+    let slideIndex = 0;
+    let timeoutId = null;
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
+
+    showSlides();
+    function currentSlide(index) {
+      slideIndex = index;
+      showSlides();
+    }
+    function plusSlides(step) {
+
+      if (step < 0) {
+        slideIndex -= 2;
+
+        if (slideIndex < 0) {
+          slideIndex = slides.length - 1;
+        }
+      }
+
+      showSlides();
+    }
+    function showSlides() {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        dots[i].classList.remove('active');
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].classList.add('active');
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+      timeoutId = setTimeout(showSlides, 5000);
+    }
+  </script>
+
+
+  <!-- Footer -->
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <footer>
+      <div class="footer">
+        <div class="foot">
+          <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+          <a href="https://twitter.com/?lang=en-in"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="foot">
+          <ul>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+
+        <div class="foot">
+          HOTEL Copyright © 2021 Hotel: King The Land - All rights reserved
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>

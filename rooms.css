@@ -1,0 +1,390 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    background-color: rgb(86, 56, 16);
+    padding: 20px 0px;
+    border-radius: 0px 0px 50px 50px;
+    margin-top: 0px;
+
+}
+
+a:hover {
+    background-color: #d69b06;
+    border-radius: 4px;
+    padding: 11px;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    margin: 40px;
+    color: white;
+}
+
+.nav {
+
+    margin-left: 450px;
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+.logo {
+    height: 80px;
+    width: 100px;
+    margin-left: 40px;
+}
+
+nav {
+    background-color: rgb(86, 56, 16);
+    padding: 8px;
+    text-align: right;
+
+}
+
+.navbar .logo {
+    border-radius: 70px;
+}
+
+a {
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+}
+
+/* Center Image */
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+    height: 650px;
+}
+
+.slideshow-container {
+    max-width: 1500px;
+    position: relative;
+    margin: auto;
+
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.text {
+    color: black;
+    font-size: 50px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 300px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.text:hover {
+    background-color: wheat;
+    color: rgb(6, 6, 92);
+}
+
+
+.numbertext {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #999999;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #111111;
+}
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+/* Room Booking Section */
+
+
+h1 {
+    font-size: 30px;
+    color: rgb(86, 56, 16);
+    text-align: center;
+}
+
+button {
+    color: white;
+    background-color: rgb(86, 56, 16);
+    font-size: 20px;
+    border-radius: 40px;
+    margin-left: 90px;
+}
+
+
+div.gallery {
+    border: 1px solid #ccc;
+    margin: 15px;
+    background-color: rgb(233, 190, 137);
+    padding: 15px;
+
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+
+}
+
+div.gallery img {
+    width: 280px;
+    height: 300px;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+button:hover {
+    color: burlywood;
+}
+
+
+/*form*/
+
+#myform {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(233, 190, 137);
+    border-radius: 3px;
+    padding: 1em;
+    height: 100vh;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+    background-color: rgb(243, 161, 61);
+    padding: 20px;
+    border-radius: 24px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.input-group {
+    display: flex;
+}
+
+.input-group>label {
+    margin-right: 1em;
+    padding: .5em 0;
+}
+
+#myform input,
+#myform select {
+    flex: 6;
+    padding: .3em;
+    margin-bottom: 1em;
+}
+
+#myform button {
+    padding: 0.60em;
+    background-color: rgb(86, 56, 16);
+    color: white;
+    border: 2px solid wheat;
+    border-radius: 40px;
+    margin-left: 6em;
+}
+
+ #myform button:hover{
+    background-color: wheat;
+    color: rgb(86,56,16);
+}
+
+#myform fieldset {
+    border: 0;
+}
+
+
+
+/* footer */
+
+.footer{
+    background: linear-gradient(rgb(46, 42, 42),rgb(89, 64, 31));
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    border-radius: 24px;
+    }
+    
+    .footer .foot{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:rgb(255, 255, 255);
+    font-size:0.8em;
+    }
+    
+    .footer .foot a{
+    text-decoration:none;
+    color:white;
+    transition:0.5s;
+    }
+    
+    .footer .foot a:hover{
+    color:#fff;
+    }
+    
+    .footer .foot ul{
+    width:100%;
+    }
+    
+    .footer .foot ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .foot a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .foot ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .foot a i{
+    margin:0% 3%;
+    }
+    }
